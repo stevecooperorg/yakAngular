@@ -1,0 +1,41 @@
+<div class="row">
+	<div class="col-md-8">    
+	<div class="well">
+		<ul class="list-group">
+			<li class="list-group-item" ng-repeat="yak in yaks | filter:searchTerm | orderBy:'name'">
+				<a href="#/yak/{{yak.name}}">{{yak.name}}</a>
+				<i ng-click="removeYak(yak)" class="pull-right glyphicon glyphicon-remove" ></i>
+			</li>
+		</ul>
+		</div>
+	</div>
+	<div class="col-md-4">    
+	
+	<div class="panel panel-default">
+	<div class="panel-heading">Yak Management</div>
+  
+  <div class="panel-body">
+	    <form>
+		    <div class="form-group">
+		    	<label for="searchTerm">Search:</label>
+		    	<input type="text" class="form-control" ng-model="searchTerm" />
+			</div>
+	    </form>
+	    <form>
+			<div class="form-group">
+		    	<label for="searchTerm">New yak:</label>
+
+				<div class="input-group">
+			      <input type="text" class="form-control" ng-model="newYak.name">
+			      <span class="input-group-btn">
+			        <button ng-click="addYak()" class="btn" ng-class="{ 'btn-primary': canAddNewYak }" ng-disabled="!canAddNewYak">Add Yak!</button>
+			      </span>
+			    </div>
+			</div>
+
+
+	    </form>
+	      </div>
+</div>
+	</div>
+</div>

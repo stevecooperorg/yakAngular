@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-12">
+        <p ng-class="{ danger: yak.isAngry }">{{yak.name | uppercase}}</p>
+        <p ng-show="yak.isAngry">
+        This yak is an angry yak!
+        </p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <progressbar value="yak.shaved" type='success' max='100'>
+        {{yak.shaved | number : 0 }}% shaved
+        </progressbar>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+      	<a href="#/">&laquo;Back</a>
+    </div>
+</div>

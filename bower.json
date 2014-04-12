@@ -1,0 +1,17 @@
+{
+  "name": "yakangular",
+  "version": "0.0.0",
+  "authors": [
+    "Steve Cooper <steve@stevecooper.org>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
